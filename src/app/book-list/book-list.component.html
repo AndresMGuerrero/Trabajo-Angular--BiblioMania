@@ -1,0 +1,30 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (book of books; track book.title){
+           <tr [ngClass]="{'clearance': book.clearance}">
+                <td><img [src]="book.image" [alt]="book.title"></td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.price | currency}}</td>
+                @if (book.stock > 0) {
+                    <td>{{book.stock}}</td>
+                } @else {
+                    <td><span class="badge text-bg-warning">SIN STOCK</span></td>
+                }            
+            </tr>
+        } @empty {
+            <tr>
+                <td colspan="4">No hay libros para mostrar.</td>
+            </tr>
+        }                
+    </tbody>
+</table>
