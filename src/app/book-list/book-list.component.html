@@ -6,6 +6,7 @@
             <th>Autor</th>
             <th>Precio</th>
             <th>Stock</th>
+            <th>Compra</th>
         </tr>
     </thead>
     <tbody>
@@ -19,7 +20,8 @@
                     <td>{{book.stock}}</td>
                 } @else {
                     <td><span class="badge text-bg-warning">SIN STOCK</span></td>
-                }            
+                }
+                <td><button class="btn btn-outline-primary btn-sm" (click)="downQuantity(book)">-</button><input type="number" [(ngModel)]="book.quantity" (keyup)="changeQuantity(book)"><button class="btn btn-outline-primary btn-sm" (click)="upQuantity(book)">+</button></td>           
             </tr>
         } @empty {
             <tr>

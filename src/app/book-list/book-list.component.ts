@@ -17,6 +17,7 @@ export class BookListComponent {
       stock: 21,
       image: "assets/img/biologia-Curtis.png",
       clearance: false,
+      quantity: 0,
     },
     {
       title: "Crónicas marcianas",
@@ -25,6 +26,7 @@ export class BookListComponent {
       stock: 7,
       image: "assets/img/cronicas-marcianas.jpg",
       clearance: false,
+      quantity: 0,
     },
     {
       title: "Dune",
@@ -33,6 +35,7 @@ export class BookListComponent {
       stock: 12,
       image: "assets/img/dune.jpg",
       clearance: true,
+      quantity: 0,
     },
     {
       title: "Historias de la Prehistoria",
@@ -41,6 +44,7 @@ export class BookListComponent {
       stock: 5,
       image: "assets/img/historias-de-la-prehistoria.jpg",
       clearance: true,
+      quantity: 0,
     },
     {
       title: "Mujeres tenían que ser",
@@ -49,6 +53,7 @@ export class BookListComponent {
       stock: 11,
       image: "assets/img/mujeres-tenian-que-ser.jpg",
       clearance: false,
+      quantity: 0,
     },
     {
       title: "The Biology Book",
@@ -57,6 +62,24 @@ export class BookListComponent {
       stock: 0,
       image: "assets/img/the-biology-book.jpg",
       clearance: false,
+      quantity: 0,
     }
-  ]
+  ];
+
+  upQuantity(book: Book): void{
+    if(book.quantity < book.stock)
+      book.quantity++;
+  }
+
+  downQuantity(book: Book): void{
+    if(book.quantity >0)
+      book.quantity--;
+  }
+
+  changeQuantity(book: Book): void{
+    if(book.quantity > book.stock)
+      book.quantity = book.stock;
+  }
+
+
 }
