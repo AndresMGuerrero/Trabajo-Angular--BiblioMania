@@ -21,7 +21,12 @@
                 } @else {
                     <td><span class="badge text-bg-warning">SIN STOCK</span></td>
                 }
-                <td><button class="btn btn-outline-primary btn-sm" (click)="downQuantity(book)">-</button><input type="number" [(ngModel)]="book.quantity" (keyup)="changeQuantity(book)"><button class="btn btn-outline-primary btn-sm" (click)="upQuantity(book)">+</button></td>           
+                <td>
+                    @if (book.stock){
+                        <app-input-integer [(quantity)]="book.quantity" [max]="book.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                    }
+                    
+                </td>           
             </tr>
         } @empty {
             <tr>

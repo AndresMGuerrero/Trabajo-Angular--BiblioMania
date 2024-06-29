@@ -66,20 +66,7 @@ export class BookListComponent {
     }
   ];
 
-  upQuantity(book: Book): void{
-    if(book.quantity < book.stock)
-      book.quantity++;
+  maxReached(m: string){
+    console.log(m);
   }
-
-  downQuantity(book: Book): void{
-    if(book.quantity >0)
-      book.quantity--;
-  }
-
-  changeQuantity(book: Book): void{
-    if(book.quantity > book.stock)
-      book.quantity = book.stock;
-  }
-
-
 }

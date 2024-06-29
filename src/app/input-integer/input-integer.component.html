@@ -1,0 +1,5 @@
+<div class="input-group mb-3">
+    <button class="btn btn-outline-primary" type="button" id="button-addon1" (click)="downQuantity()">-</button>
+    <input type="number" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" [(ngModel)]="quantity" (keyup)="changeQuantity()">
+    <button class="btn btn-outline-primary" type="button" id="button-addon1" (click)="upQuantity()">+</button>
+</div>
