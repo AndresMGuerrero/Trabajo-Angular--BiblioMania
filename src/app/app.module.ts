@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { BookListComponent } from './book-list/book-list.component';
 
 import { FormsModule } from '@angular/forms';
+import { BibliomaniaBooksComponent } from './bibliomania-books/bibliomania-books.component';
+import { BibliomaniaAboutComponent } from './bibliomania-about/bibliomania-about.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookListComponent
+    BookListComponent,
+    BibliomaniaBooksComponent,
+    BibliomaniaAboutComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
