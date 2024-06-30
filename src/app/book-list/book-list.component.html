@@ -24,6 +24,7 @@
                 <td>
                     @if (book.stock){
                         <app-input-integer [(quantity)]="book.quantity" [max]="book.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                        <button class="btn btn-primary" (click)="addToCart(book)">Añadir a Carrito</button>
                     }
                     
                 </td>           
