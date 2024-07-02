@@ -1,7 +1,9 @@
-<h3>Carrito de compras</h3>
-<ul>
-    @for (book of (cartList$ | async); track book.title){
-        <li>{{book.title}}: {{book.quantity}}</li>
-    }
-    
-</ul>
+<div class="contenedor-carrito">
+    <h3>Carrito de compras</h3>
+    <ul>
+        @for (book of (cartList$ | async); track book.title){
+            <li>{{book.title}}: {{book.quantity}}</li>
+        }
+        
+    </ul>
+</div>
