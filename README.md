@@ -11,4 +11,4 @@ El siguiente sitio web llamado **BiblioMania** es un sitio en el que podés busc
 
 ## Link a Stackblitz:
 
-(https://stackblitz.com/~/github.com/AndresMGuerrero/Trabajo-Angular--BiblioMania)
+https://stackblitz.com/~/github.com/AndresMGuerrero/Trabajo-Angular--BiblioMania
