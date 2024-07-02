@@ -4,14 +4,24 @@ img {
 }
 
 .clearance {
-    background: rgb(95, 18, 126);
-    border: 2px dotted rgb(142, 15, 180);    
+    background: rgb(32, 112, 216);
+    border: 2px dashed rgb(18, 15, 180);    
 }
-
-
 
 td {
     vertical-align: middle;
+}
+
+.contenedor-desc {
+    text-align: center;
+    border: 2px dashed blue;
+    border-radius: 10%;
+    background-color: rgb(78, 173, 236);
+    margin: 0.5rem;
+    padding: 0.7rem;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 

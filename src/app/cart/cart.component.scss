@@ -1,0 +1,29 @@
+h3 {
+    color: rgb(0, 0, 71);
+    text-align: center;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+
+ul {
+    color: #007acc;
+    font-family: Arial, sans-serif;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 5px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 40px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+    background-color: #bbdefb;
+    color: #004c8c;
+}
