@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BibliomaniaBooksComponent } from './bibliomania-books/bibliomania-books.component';
 import { BibliomaniaAboutComponent } from './bibliomania-about/bibliomania-about.component';
+import { BibliomaniaCategoriesComponent } from './bibliomania-categories/bibliomania-categories.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: BibliomaniaAboutComponent
+  },
+  {
+    path: 'categories',
+    component: BibliomaniaCategoriesComponent
   },
 ];
 

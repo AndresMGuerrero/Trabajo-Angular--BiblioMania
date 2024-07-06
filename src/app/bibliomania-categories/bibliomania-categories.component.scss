@@ -1,0 +1,26 @@
+a { 
+    text-decoration: none;
+    color: #032d86;
+    pointer-events: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: linear-gradient(45deg, #a6e6ff, #274da0);
+    border-radius: 5px;
+    font-weight: bold;    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    cursor: pointer;
+}

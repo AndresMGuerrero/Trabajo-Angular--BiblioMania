@@ -11,6 +11,7 @@ import { BibliomaniaAboutComponent } from './bibliomania-about/bibliomania-about
 import { CartComponent } from './cart/cart.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BibliomaniaCategoriesComponent } from './bibliomania-categories/bibliomania-categories.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     BibliomaniaBooksComponent,
     BibliomaniaAboutComponent,
     CartComponent,
-    InputIntegerComponent
+    InputIntegerComponent,
+    BibliomaniaCategoriesComponent
   ],
   imports: [
     BrowserModule,
